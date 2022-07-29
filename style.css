@@ -23,7 +23,7 @@ input,label{
 	font-family: inherit;
 	font-size: 16px;
 	padding: 10px;
-	margin-top: 10px;
+	margin-top: 20px;
 	width: 100%;
 	margin-top: 10%;
 	width: 50%;
@@ -33,10 +33,9 @@ input,label{
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
-	width: 45%;
-    margin-left: 25%;
+	width: 50%;
+    margin-left: 30%;
     margin-right: 10%;
-	margin-top:5px;
 }
 .form {
     width: 150%;
@@ -150,5 +149,5 @@ img{
 	margin-left: -10%;
 }
 #number{
-	width:350px !important;
+	width:50px !important;
 }
