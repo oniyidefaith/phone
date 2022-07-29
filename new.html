@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>International Telephone Input</title>
+  <meta name="description" content="International Telephone Input - a JavaScript plugin for entering international telephone numbers.">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css?7">
+  <link rel="stylesheet" href="node_modules/intl-tel-input/build/css/intlTelInput.css?40">
+  <link rel="stylesheet" href="css/demo.css?14">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N472J4QKC4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N472J4QKC4');
+  </script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>International Telephone Input</h1>
+
+    <h3>What is it?</h3>
+    <p>A JavaScript plugin for entering and validating international telephone numbers. It adds a flag dropdown to any
+      input, detects the user's country, displays a relevant placeholder and provides formatting/validation methods.</p>
+
+    <button id="donate" class="btn btn-donate" type="button">Tip me $1 🍺</button>
+
+    <div class="demo">
+      <h3>Demo</h3>
+      <input type="tel" id="phone" class="form-control">
+    </div>
+
+    <h3>Sponsored by</h3>
+    <img src="img/twilio.png" height="100" />
+    <p>Use <a href="https://www.twilio.com/blog/international-telephone-input-twilio?utm_source=intl-tel-input.com&utm_medium=referral&utm_campaign=intl_tel_input">Twilio's API to build phone verification, SMS 2FA, appointment reminders, marketing
+      notifications and so much more</a>. We can't wait to see what you build.</p>
+
+    <h3>Features</h3>
+    <ul>
+      <li>Automatically select the user's current country using an IP lookup</li>
+      <li>Automatically set the input placeholder to an example number for the selected country</li>
+      <li>Navigate the country dropdown by typing a country's name, or using up/down keys</li>
+      <li>Handle phone number extensions</li>
+      <li>The user types their national number and the plugin gives you the full standardized international number</li>
+      <li>Full validation, including specific error types</li>
+      <li>Retina flag icons</li>
+      <li>Lots of initialisation options for customisation, as well as public methods for interaction</li>
+    </ul>
+
+    <h3>Examples</h3>
+    <ul>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/is-valid-number.html">Validation</a>: Use Google's
+        libphonenumber for validation
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/default-country-ip.html">Lookup user's country</a>: Use IP
+        address lookup to set the default country to the user's country
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/national-mode.html">National mode</a>: Use nationalMode
+        option, but still extract full international numbers
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/country-sync.html">Country sync</a>: Access the country data
+        to create a separate country dropdown for an address form, and then listen for change events to keep the two
+        dropdowns in sync
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/only-countries-europe.html">European countries</a>: Only show
+        European country codes
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/modify-country-data.html">Modify country data</a>: Modify the
+        data to only show localised country names
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/hidden-input.html">Hidden input</a>: Submitting the full
+        international number when in nationalMode
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/init-promise.html">Initialisation promise</a>: Know when the
+        plugin has finished initialising
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/display-number.html">Display an existing number</a>: The
+        plugin will automatically select the right flag and format the number
+      </li>
+      <li>
+        <a href="node_modules/intl-tel-input/examples/gen/multiple-instances.html">Multiple instances</a>: Use the
+        plugin multiple times on the same page
+      </li>
+      <li>
+        <a href="http://codepen.io/jackocnr/full/ONXWgQ">Large flags</a>: Build the plugin with extra large flags!
+      </li>
+    </ul>
+
+    <p class="actions">
+      <a class="btn btn-primary btn-github" href="https://github.com/jackocnr/intl-tel-input">View on Github</a>
+      <a class="btn btn-default btn-jackocnr" href="http://jackocnr.com">Visit Author's Website</a>
+    </p>
+  </div>
+
+  <!-- fork me on github -->
+  <a href="https://github.com/jackocnr/intl-tel-input" class="btn-fork-github">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+  </a>
+
+  <script src="node_modules/intl-tel-input/build/js/intlTelInput.js?72"></script>
+  <script src="js/demo.js?7"></script>
+</body>
+
+</html>
